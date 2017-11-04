@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    
+        <servlet>
+        <servlet-class> com.jeopardy.servlets.LoginServlet </servlet-class>
+        <servlet-name> login </servlet-name>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name> login </servlet-name>
+        <url-pattern> /Login </url-pattern>        
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-class> com.jeopardy.servlets.PickQuestionServlet </servlet-class>
+        <servlet-name> question </servlet-name>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name> question </servlet-name>
+        <url-pattern> /Questions </url-pattern>        
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-class> com.jeopardy.servlets.AnswerSelectServlet </servlet-class>
+        <servlet-name> answers </servlet-name>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name> answers </servlet-name>
+        <url-pattern> /Answers </url-pattern>        
+    </servlet-mapping>
+    
+    
+    
+</web-app>
